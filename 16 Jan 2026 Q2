@@ -1,0 +1,55 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+
+
+/*class Student{
+    int rollNumber;
+    String name;
+    
+    
+    Student(){
+        rollNumber = 1;
+        name = "Sanjeev";
+    }
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    Student obj = new Student();
+	    
+		System.out.println(obj.rollNumber);
+		System.out.println(obj.name);
+	}
+}*/
+
+
+//Parameterized Constructor
+
+class Student{
+    int rollNumber;
+    String name;
+    
+    
+    Student(int i, String n){
+        rollNumber = i ;
+        name = n;
+    }
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    Student obj = new Student( 1 , "Sanjeev");
+	    
+		System.out.println(obj.rollNumber);
+		System.out.println(obj.name);
+	}
+}
