@@ -1,0 +1,35 @@
+// Encapsulation mens wrapping up the data (Function , Method , Variable, Object)
+// into a single unit called class and restriction of the data access uding access modifiers 
+//public, privatea and protected 
+//need for Encapsulation -> Data Security, Controll Access, Code Maintainability 
+//Code1 - Getter and Setter 
+
+
+class BankAccount{
+    int BankBalance;
+    //setters
+    public void setBalance(int amount){
+        if(amount >= 0){
+            BankBalance = amount;
+        }else{
+            System.out.println("Invalid Amount");
+        }
+    }
+    //getters 
+    public int getBalance(){
+        return BankBalance;
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+	    BankAccount acc = new BankAccount();
+	    acc.setBalance(5000);
+	    System.out.println(acc.getBalance());
+		
+	}
+}
+
+
+
+
