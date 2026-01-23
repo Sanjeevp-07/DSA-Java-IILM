@@ -1,0 +1,28 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+class Vehicle {
+    void start() {
+        System.out.println("Vehicle starts");
+    }
+}
+
+class Bike extends Vehicle {
+    void drive() {
+        System.out.println("Bike running");
+    }
+}
+
+class SportsBike extends Bike {
+    void turbo() {
+        System.out.println("Turbo boosted");
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        SportsBike sb = new SportsBike();
+        sb.start(); 
+        sb.drive();  
+        sb.turbo();   
+    }
+}
