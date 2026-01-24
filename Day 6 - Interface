@@ -112,6 +112,27 @@ public class Main
 }
 
 
+--------------Code-5----------------
+//Overriding 
+
+class CollegeStudent{
+    void task(){
+        System.out.println("Eating Food");
+    }
+}
+class Student extends CollegeStudent{
+    @Override
+    void task(){
+        System.out.println("Pani pira h");
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+		CollegeStudent obj = new Student();
+		obj.task();
+	}
+}
 
 
 
