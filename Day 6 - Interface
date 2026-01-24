@@ -65,7 +65,7 @@ public class Main
 
 
 
-------------Code--------------------
+------------Code-3-------------------
 
 //Inheriting Attributes 
 class University{
@@ -87,6 +87,29 @@ public class Main
 	}
 }
 
+
+
+------------Code-4------------------
+//Inheriting methods 
+
+class Parent{
+    void pocketMoney(){
+        System.out.println("Pocket Money Credit");
+    }
+}
+class child extends Parent{
+    void freelancing(){
+        System.out.println("khud ka paisa");
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+		child ch = new child();
+		ch.pocketMoney();
+		ch.freelancing();
+	}
+}
 
 
 
