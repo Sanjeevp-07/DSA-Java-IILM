@@ -35,6 +35,34 @@ public class Main
 
 
 
+//Code - 2 
+
+
+//Inheritance the constructor 
+//Constructor can be inherited using super keyword 
+ 
+ 
+ class Persono {
+     Person(String name2){
+         System.out.println("Person Name:" + name);
+     }
+ }
+ 
+ class CollegeStudent extends Person{
+     CollegeStudent(String name){
+         super(name); //parent class constructor called 
+         System.out.println("College student constructor called"); // child class constructor called 
+     }
+ }
+ 
+public class Main
+{
+	public static void main(String[] args) {
+		CollegeStudent std = new CollegeStuden("Sanjeev");
+	}
+}
+
+
 
 
 
